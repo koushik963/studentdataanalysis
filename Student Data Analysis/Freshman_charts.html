@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Freshman Data</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+							  <script>
+								google.load('visualization', '1', { 'packages': ['map'] });
+								google.setOnLoadCallback(drawMap);
+
+								function drawMap() {
+								  var data = google.visualization.arrayToDataTable([
+									['School', 'No.of Students in Uakron'],
+									['Green High School', 'Green High School: 210'],
+									['summit county', 'Stow High School: 193'],
+									['Wadsworth Senior High School, Wadsworth, OH ', 'Wadsworth Senior High School: 191'],
+								 
+								
+								 ['Cuyahoga Falls,OH','Cuyahoga Falls High School:160'],
+								 ['Rampart Ave,OH',	'Firestone High School:144'],
+							['Medina,OH','Medina Senior High School:142']
+
+								  ]);
+
+								var options = { showTip: true };
+
+								var map = new google.visualization.Map(document.getElementById('chart_div1'));
+
+								map.draw(data, options);
+								$('#main').animate({height: '+=500'}, 500);
+							  };
+							  </script>
+							  <script language="javascript" type="text/javascript">
+								  $(window).load(function() {
+									$('#loading').fadeOut("slow");
+								  });
+								</script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+		<style>
+		#types ul li a{
+		text-decoration: none;
+		color: black;
+		}
+		#hd{
+			text-shadow: 4px 4px #BDB9BC;
+		}
+		
+		.tablu{
+		width:750px;
+		height:480px;
+		border: 1px solid black;
+		}
+		.sheet{
+		border: 1px solid black;
+		}
+		.address{
+		text-decoration: none;
+		font-size: 15px;
+		}
+
+		#types:hover{
+			font-weight: bold;
+			font-size: 1.02em;
+			text-decoration: underline;
+		}
+		ul{
+			list-style-type: circle;
+			margin-left: 5em;			
+		}
+		
+								#loading {
+						position: fixed;
+						left: 0px;
+						top: 0px;
+						width: 100%;
+						height: 100%;
+						z-index: 9999;
+						background: url('images/loader2.gif') 50% 50% no-repeat rgb(0,0,0);
+						}
+
+						
+		</style>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+			<div id="loading">
+				
+			</div>
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="icon fa-home"><span>Home</span></a>
+						<a id="AAA" href="#work" class="icon fa-bar-chart active"><span>Analysis</span></a>
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+							<article id="GPAEthnicity" class="panel">
+									<script>
+										$("#AAA").addClass("active");
+									</script>
+                            		<p class="address"><a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address">Freshman Data</a>><p>
+									<h3>GPA Above 3.5 at completion categorised by Ethnicity</h3>
+									<br>
+									<iframe class="tablu" src="tablue_4.html"></iframe>
+									<iframe class="sheet" src="https://docs.google.com/spreadsheets/d/1S-EBueE_OaatQAWSw-in_iuJTTGGHv-eI8C6tg70pqc/pubhtml?widget=true&amp;headers=false" width="300px" height="350px">
+									</iframe>
+                            </article>
+							<article id="BestACTEthnicity" class="panel">
+                            		<p class="address"> <a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address">Freshman Data</a> > <p>
+									<h3>Best ACT Scores based on Ethnicity</h3>
+									<br>
+									<iframe class="tablu" src="tablu_1.html"></iframe>
+									<iframe class="sheet" src="https://docs.google.com/spreadsheets/d/1u4-y237xdeujZWgd6YH6AYm_vGlq9mm4mbmoE_TeVCY/pubhtml?widget=true&amp;headers=false" width="280px" height="350px">
+									</iframe>
+                            </article>
+							
+							<article id="BestACTDeptWise" class="panel">
+                            		<p class="address"><a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address">Freshman Data</a>><p>
+									<h3>Best ACT Scores Department wise</h3>
+									<br>
+									<iframe class="tablu" src="tablu_2.html"></iframe>
+									<iframe class="sheet" src="https://docs.google.com/spreadsheets/d/1UIHpuYY4YnUolQ8wFM1Oeo1uOtMEZnQwJch4f-NktsE/pubhtml?widget=true&amp;headers=false" width="350px" height="500px">
+									</iframe>
+                            </article>
+							<article id="BetterGPADeptWise" class="panel">
+                            		<p class="address"><a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address"> Freshman Data</a> > <p>
+									<h3>Better GPA Department wise</h3>
+									<br>
+									<iframe class="tablu" src="tablu_3.html"></iframe>
+									<iframe class="sheet" src="https://docs.google.com/spreadsheets/d/1o_Gl3hqRIiKunPP1YPAFHarLSeljmhc8DcEWwHz_aEU/pubhtml?widget=true&amp;headers=false" width="450px" height="500px">
+									</iframe>
+                            </article>
+							
+							<article id="HSStudentsMoreACT" class="panel">
+                            		<p class="address"><a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address">Freshman Data</a> > <p>
+									<h3>High School Students having more ACT Scores</h3>
+									<br>
+									<iframe class="tablu" src="tablu_6.html"></iframe>
+									<iframe class="sheet" src="https://docs.google.com/spreadsheets/d/1h4S_M6N4gdolt8IE4qmNophEnMfshQ1IfcZ6_QWJvw4/pubhtml?widget=true&amp;headers=false" width="450px" height="500px">
+									</iframe>
+                            </article>
+							<article id="HSSendMoreStu" class="panel">
+									<p class="address"><a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address">Freshman Data</a> > <p>
+                            		<h3>Which High School sends more Students</h3>
+									<br>
+						<!--Which high school sends more students Google Maps Page    -->
+									
+							<!--Which high school sends more students Google Maps Page    -->
+										<div id="chart_div1"></div>	
+                            </article>
+							<article id="HSCountyWise" class="panel">
+                            		<p class="address"><a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address">Freshman Data</a> > <p>
+									<h3>High School Students County wise</h3>
+									<br>
+									<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+									  <script>
+										google.load('visualization', '1', { 'packages': ['map'] });
+										google.setOnLoadCallback(drawMap);
+
+										function drawMap() {
+										  var data = google.visualization.arrayToDataTable([
+											['County', 'No.of Students in Uakron'],
+											['Summit', 'Summit County:2420'],
+											['Stark', 'Stark County:877'],
+											['Cuyahoga', 'Cuyahoga County:861']
+										 
+
+										  ]);
+
+										var options = { showTip: true };
+
+										var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+										map.draw(data, options);
+									  };
+									  </script>
+									  <div id="chart_div"></div>
+									<iframe class="sheet" src="https://docs.google.com/spreadsheets/d/15uRmqTv9lrBNWAJytG4XAyslOJhcX-2h14t2XixFz_g/pubhtml?widget=true&amp;headers=false" width="450px" height="500px">
+									</iframe>
+                            </article>
+							
+							<article id="HSCountyWise1" class="panel">
+                            		<p class="address"><a href="index.html#work" class="address">Analysis</a> > <a href="Freshman_analysis.html#work" class="address">Freshman Data</a> > <p>
+									<h3>High School Students having more ACT Scores</h3>
+									<br>
+									<iframe class="tablu" src="tableau_15.html"></iframe>
+									<iframe class="sheet" src="https://docs.google.com/spreadsheets/d/15uRmqTv9lrBNWAJytG4XAyslOJhcX-2h14t2XixFz_g/pubhtml?widget=true&amp;headers=false" width="450px" height="500px">
+									</iframe>
+                            </article>
+							
+							
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+									<h1 id="hd">The University of Akron</h1>
+									<p>Student Data Analysis</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<img src="images/uakron_logo.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work --> 
+							<article id="work" class="panel">
+								<header>
+									<h2 >Student Data Analysis</h2>
+									<p>This project shows the analysis of the University of Akron undergraduate students data from the past 10 years. Depending on the admit type of the students the application is classified into the following types:</p>
+									
+								</header>
+								<div id="types">
+									<ul id="t1">
+										<li id="l1"><a href="Freshman_analysis.html#work">Freshman Data</a></li>
+										<li id="l2"><a href="Other_Analysis.html#work">All other admit types</a></li>
+									</ul>
+								</div>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="6u">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" placeholder="Message" rows="8"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+		
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; UAkron.</li>
+						</ul>
+					</div>
+		
+			</div>
+
+	</body>
+</html>
